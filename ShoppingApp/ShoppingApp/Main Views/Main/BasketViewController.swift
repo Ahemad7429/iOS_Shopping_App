@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import JGProgressHUD
 
 class BasketViewController: UIViewController {
-
+    
     // MARK:- Outlets
     
     @IBOutlet weak var footerView: UIView!
@@ -20,8 +19,6 @@ class BasketViewController: UIViewController {
     @IBOutlet weak var basketTotalPriceLabel: UILabel!
     
     // MARK:- Variables
-    
-    let hud = JGProgressHUD(style: .dark)
     var basket: Basket?
     var purchasedItemIds = [String]()
     var allItems = [Item]()
@@ -35,18 +32,29 @@ class BasketViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        loadBasketFromFirestore()
+        if MUser.currentUser() != nil {
+            loadBasketFromFirestore()
+        } else {
+            updateTotalLabels(true)
+        }
     }
     
     // MARK:- Actions
     
     @IBAction func checkOutButtonWasTapped(_ sender: UIButton) {
+        if MUser.currentUser()!.onBoard {
+            tempFunction()
+            addItemsToPurchaseHistory(self.purchasedItemIds)
+            emptyTheBasket()
+        } else {
+            IndicatorManager.shared.showFailureHUD(with: "Please complete you profile!")
+        }
     }
     
     // MARK:- Download Basket
     
     private func loadBasketFromFirestore() {
-        downloadBasketFromFirestore("1234") { (basket) in
+        downloadBasketFromFirestore(MUser.currentId()) { (basket) in
             self.basket = basket
             self.getBasketItems()
         }
@@ -61,6 +69,40 @@ class BasketViewController: UIViewController {
             }
         }
     }
+    
+    func tempFunction() {
+        for item in allItems {
+            print("we have ", item.id ?? "")
+            purchasedItemIds.append(item.id)
+        }
+    }
+    
+    
+    private func emptyTheBasket() {
+        purchasedItemIds.removeAll()
+        allItems.removeAll()
+        tableview.reloadData()
+        basket!.itemIds = []
+        updateBasketInFirestore(basket!, withValues: [kITEMIDS : basket!.itemIds!]) { (error) in
+            if error != nil {
+                print("Error updating basket ", error!.localizedDescription)
+            }
+            self.getBasketItems()
+        }
+    }
+    
+    private func addItemsToPurchaseHistory(_ itemIds: [String]) {
+        if MUser.currentUser() != nil {
+            print("item ids , ", itemIds)
+            let newItemIds = MUser.currentUser()!.purchasedItemIds + itemIds
+            updateCurrentUserInFirestore(withValues: [kPURCHASEDITEMIDS : newItemIds]) { (error) in
+                if error != nil {
+                    print("Error adding purchased items ", error!.localizedDescription)
+                }
+            }
+        }
+    }
+    
     
     // MARK:- Navigation
     

@@ -22,6 +22,14 @@
 		10EA037E2564EB54007F0F34 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA037D2564EB54007F0F34 /* ImageCollectionViewCell.swift */; };
 		10EA03812564F70D007F0F34 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA03802564F70D007F0F34 /* Basket.swift */; };
 		10EA038425651D0F007F0F34 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA038325651D0F007F0F34 /* BasketViewController.swift */; };
+		10EA038725662ADA007F0F34 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EA038625662ADA007F0F34 /* Onboarding.storyboard */; };
+		10EA038D25662DED007F0F34 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA038C25662DED007F0F34 /* WelcomeViewController.swift */; };
+		10EA039125663377007F0F34 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA039025663377007F0F34 /* MUser.swift */; };
+		10EA039525678B8C007F0F34 /* IndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA039425678B8C007F0F34 /* IndicatorManager.swift */; };
+		10EA03982568D6EB007F0F34 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA03972568D6EB007F0F34 /* ProfileTableViewController.swift */; };
+		10EA039B2568DF21007F0F34 /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA039A2568DF21007F0F34 /* FinishRegistrationViewController.swift */; };
+		10EA039E2568ED4C007F0F34 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA039D2568ED4C007F0F34 /* EditProfileViewController.swift */; };
+		10EA03A12568F27B007F0F34 /* PurchasedHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA03A02568F27B007F0F34 /* PurchasedHistoryTableViewController.swift */; };
 		10F79C1D2538C3E9008DB509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F79C1C2538C3E9008DB509 /* AppDelegate.swift */; };
 		10F79C1F2538C3E9008DB509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F79C1E2538C3E9008DB509 /* SceneDelegate.swift */; };
 		10F79C242538C3E9008DB509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F79C222538C3E9008DB509 /* Main.storyboard */; };
@@ -48,6 +56,14 @@
 		10EA037D2564EB54007F0F34 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		10EA03802564F70D007F0F34 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		10EA038325651D0F007F0F34 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		10EA038625662ADA007F0F34 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		10EA038C25662DED007F0F34 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		10EA039025663377007F0F34 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		10EA039425678B8C007F0F34 /* IndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorManager.swift; sourceTree = "<group>"; };
+		10EA03972568D6EB007F0F34 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		10EA039A2568DF21007F0F34 /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
+		10EA039D2568ED4C007F0F34 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		10EA03A02568F27B007F0F34 /* PurchasedHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedHistoryTableViewController.swift; sourceTree = "<group>"; };
 		10F79C192538C3E9008DB509 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F79C1C2538C3E9008DB509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10F79C1E2538C3E9008DB509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,11 +93,8 @@
 		103419E2253B5C7100D80DD3 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
-				10F79C302538C73C008DB509 /* CategoryCollectionViewController.swift */,
-				103419ED253C1DAE00D80DD3 /* ItemsTableViewController.swift */,
-				103419F1253C463400D80DD3 /* AddItemViewController.swift */,
-				10EA037A2564E73A007F0F34 /* ItemViewController.swift */,
-				10EA038325651D0F007F0F34 /* BasketViewController.swift */,
+				10EA038B25662DBF007F0F34 /* Onboarding */,
+				10EA038925662DB1007F0F34 /* Main */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 				103419E6253B5CCA00D80DD3 /* Category.swift */,
 				103419EF253C1F9900D80DD3 /* Item.swift */,
 				10EA03802564F70D007F0F34 /* Basket.swift */,
+				10EA039025663377007F0F34 /* MUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,8 +137,41 @@
 			children = (
 				10F79C272538C3EA008DB509 /* LaunchScreen.storyboard */,
 				10F79C222538C3E9008DB509 /* Main.storyboard */,
+				10EA038625662ADA007F0F34 /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		10EA038925662DB1007F0F34 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				10F79C302538C73C008DB509 /* CategoryCollectionViewController.swift */,
+				103419ED253C1DAE00D80DD3 /* ItemsTableViewController.swift */,
+				103419F1253C463400D80DD3 /* AddItemViewController.swift */,
+				10EA037A2564E73A007F0F34 /* ItemViewController.swift */,
+				10EA038325651D0F007F0F34 /* BasketViewController.swift */,
+				10EA03972568D6EB007F0F34 /* ProfileTableViewController.swift */,
+				10EA039D2568ED4C007F0F34 /* EditProfileViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		10EA038B25662DBF007F0F34 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				10EA038C25662DED007F0F34 /* WelcomeViewController.swift */,
+				10EA039A2568DF21007F0F34 /* FinishRegistrationViewController.swift */,
+				10EA03A02568F27B007F0F34 /* PurchasedHistoryTableViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		10EA039325678B70007F0F34 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				10EA039425678B8C007F0F34 /* IndicatorManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		10F79C102538C3E9008DB509 = {
@@ -148,6 +195,7 @@
 		10F79C1B2538C3E9008DB509 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				10EA039325678B70007F0F34 /* Managers */,
 				103419E5253B5CB600D80DD3 /* Models */,
 				103419E4253B5C9D00D80DD3 /* Helpers */,
 				103419E3253B5C8000D80DD3 /* Custom Cells */,
@@ -240,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F79C292538C3EA008DB509 /* LaunchScreen.storyboard in Resources */,
+				10EA038725662ADA007F0F34 /* Onboarding.storyboard in Resources */,
 				103419DF2538CB2000D80DD3 /* GoogleService-Info.plist in Resources */,
 				10F79C262538C3EA008DB509 /* Assets.xcassets in Resources */,
 				10F79C242538C3E9008DB509 /* Main.storyboard in Resources */,
@@ -302,10 +351,13 @@
 				10EA037B2564E73A007F0F34 /* ItemViewController.swift in Sources */,
 				103419F6253C512300D80DD3 /* Downloader.swift in Sources */,
 				10F79C332538C773008DB509 /* CategoryCollectionViewCell.swift in Sources */,
+				10EA03A12568F27B007F0F34 /* PurchasedHistoryTableViewController.swift in Sources */,
 				103419EE253C1DAE00D80DD3 /* ItemsTableViewController.swift in Sources */,
+				10EA039E2568ED4C007F0F34 /* EditProfileViewController.swift in Sources */,
 				10F79C1D2538C3E9008DB509 /* AppDelegate.swift in Sources */,
 				10EA03812564F70D007F0F34 /* Basket.swift in Sources */,
 				10EA03752563FD37007F0F34 /* ItemTableViewCell.swift in Sources */,
+				10EA039B2568DF21007F0F34 /* FinishRegistrationViewController.swift in Sources */,
 				10EA0378256403D3007F0F34 /* HelperFunctions.swift in Sources */,
 				103419F2253C463400D80DD3 /* AddItemViewController.swift in Sources */,
 				10F79C312538C73C008DB509 /* CategoryCollectionViewController.swift in Sources */,
@@ -313,6 +365,10 @@
 				103419EA253B5E5100D80DD3 /* Constants.swift in Sources */,
 				10F79C1F2538C3E9008DB509 /* SceneDelegate.swift in Sources */,
 				103419E7253B5CCA00D80DD3 /* Category.swift in Sources */,
+				10EA039125663377007F0F34 /* MUser.swift in Sources */,
+				10EA038D25662DED007F0F34 /* WelcomeViewController.swift in Sources */,
+				10EA03982568D6EB007F0F34 /* ProfileTableViewController.swift in Sources */,
+				10EA039525678B8C007F0F34 /* IndicatorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

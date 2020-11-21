@@ -14,6 +14,7 @@ let kFILEREFERENCE              = "gs://shopingmarketios.appspot.com"
 // MARK:- Segues
 let kCategoryToItemSeg          = "CategoryToItemSeg"
 let kItemToAddItemSeg           = "ItemToAddItemSeg"
+let kProfileToEditSeg           = "profileToEditSeg"
 
 // MARK:- Firebase Headers
 let kUSER_PATH                 = "User"
@@ -26,12 +27,22 @@ let kNAME                      = "name"
 let kIMAGENAME                 = "imageName"
 let kOBJECTID                  = "objectId"
 
-//Item
+// MARK:- Item
 public let kCATEGORYID        = "categoryId"
 public let kDESCRIPTION       = "description"
 public let kPRICE             = "price"
 public let kIMAGELINKS        = "imageLinks"
 
-//Basket
+// MARK:- Basket
 let kOWNERID                  = "ownerId"
 let kITEMIDS                  = "itemIds"
+
+// MARK:- MUser
+let kEMAIL                    = "email"
+let kFIRSTNAME                = "firstName"
+let kLASTNAME                 = "lastName"
+let kFULLADDRESS              = "fullAddress"
+let kFULLNAME                 = "fullName"
+let kONBOARD                  = "onboard"
+let kPURCHASEDITEMIDS         = "purchasedItemIds"
+let kCURRENTUSER              = "currentUser"
