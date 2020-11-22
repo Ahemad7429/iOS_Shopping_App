@@ -64,6 +64,7 @@
 		10EA039A2568DF21007F0F34 /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
 		10EA039D2568ED4C007F0F34 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		10EA03A02568F27B007F0F34 /* PurchasedHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedHistoryTableViewController.swift; sourceTree = "<group>"; };
+		10EA03A3256A3142007F0F34 /* ShoppingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShoppingApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		10F79C192538C3E9008DB509 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F79C1C2538C3E9008DB509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10F79C1E2538C3E9008DB509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 		10F79C1B2538C3E9008DB509 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				10EA03A3256A3142007F0F34 /* ShoppingApp-Bridging-Header.h */,
 				10EA039325678B70007F0F34 /* Managers */,
 				103419E5253B5CB600D80DD3 /* Models */,
 				103419E4253B5C9D00D80DD3 /* Helpers */,
@@ -261,6 +263,7 @@
 				TargetAttributes = {
 					10F79C182538C3E9008DB509 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -515,6 +518,7 @@
 			baseConfigurationReference = E54EA1560AD4C9F6B94EB30A /* Pods-ShoppingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,6 +527,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahemadabbas.ShoppingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShoppingApp/ShoppingApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,6 +539,7 @@
 			baseConfigurationReference = 61BDE0C9DCFF1DCF53DA7DF6 /* Pods-ShoppingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,6 +548,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahemadabbas.ShoppingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShoppingApp/ShoppingApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

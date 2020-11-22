@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        initializePayPal()
         FirebaseApp.configure()
         return true
     }
@@ -34,6 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    // MARK:- Paypal
+    private func initializePayPal() {
+        PayPalMobile.initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction : "AdKeAzNPUkz18xUtf9K-hiuvl_oqjkqI7NW0AB1RF3JiiMzy2do6uK7SQhMluFg67GzmIcElXFORvN00", PayPalEnvironmentSandbox : "sb-keq9h3830106@personal.example.com"])
+    }
 }
 
