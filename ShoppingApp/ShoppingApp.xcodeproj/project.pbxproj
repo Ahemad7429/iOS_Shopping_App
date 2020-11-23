@@ -30,6 +30,8 @@
 		10EA039B2568DF21007F0F34 /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA039A2568DF21007F0F34 /* FinishRegistrationViewController.swift */; };
 		10EA039E2568ED4C007F0F34 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA039D2568ED4C007F0F34 /* EditProfileViewController.swift */; };
 		10EA03A12568F27B007F0F34 /* PurchasedHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA03A02568F27B007F0F34 /* PurchasedHistoryTableViewController.swift */; };
+		10EA03A8256A39C1007F0F34 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA03A7256A39C1007F0F34 /* SearchViewController.swift */; };
+		10EA03AB256B87F2007F0F34 /* AlgoriyaServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA03AA256B87F2007F0F34 /* AlgoriyaServiceManager.swift */; };
 		10F79C1D2538C3E9008DB509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F79C1C2538C3E9008DB509 /* AppDelegate.swift */; };
 		10F79C1F2538C3E9008DB509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F79C1E2538C3E9008DB509 /* SceneDelegate.swift */; };
 		10F79C242538C3E9008DB509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F79C222538C3E9008DB509 /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 		10EA039D2568ED4C007F0F34 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		10EA03A02568F27B007F0F34 /* PurchasedHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedHistoryTableViewController.swift; sourceTree = "<group>"; };
 		10EA03A3256A3142007F0F34 /* ShoppingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShoppingApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		10EA03A7256A39C1007F0F34 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		10EA03AA256B87F2007F0F34 /* AlgoriyaServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoriyaServiceManager.swift; sourceTree = "<group>"; };
 		10F79C192538C3E9008DB509 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F79C1C2538C3E9008DB509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10F79C1E2538C3E9008DB509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				10EA038325651D0F007F0F34 /* BasketViewController.swift */,
 				10EA03972568D6EB007F0F34 /* ProfileTableViewController.swift */,
 				10EA039D2568ED4C007F0F34 /* EditProfileViewController.swift */,
+				10EA03A7256A39C1007F0F34 /* SearchViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				10EA039425678B8C007F0F34 /* IndicatorManager.swift */,
+				10EA03AA256B87F2007F0F34 /* AlgoriyaServiceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -354,7 +360,9 @@
 				10EA037B2564E73A007F0F34 /* ItemViewController.swift in Sources */,
 				103419F6253C512300D80DD3 /* Downloader.swift in Sources */,
 				10F79C332538C773008DB509 /* CategoryCollectionViewCell.swift in Sources */,
+				10EA03AB256B87F2007F0F34 /* AlgoriyaServiceManager.swift in Sources */,
 				10EA03A12568F27B007F0F34 /* PurchasedHistoryTableViewController.swift in Sources */,
+				10EA03A8256A39C1007F0F34 /* SearchViewController.swift in Sources */,
 				103419EE253C1DAE00D80DD3 /* ItemsTableViewController.swift in Sources */,
 				10EA039E2568ED4C007F0F34 /* EditProfileViewController.swift in Sources */,
 				10F79C1D2538C3E9008DB509 /* AppDelegate.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EmptyDataSet_Swift
 
 class ItemsTableViewController: UITableViewController {
     
@@ -18,6 +19,8 @@ class ItemsTableViewController: UITableViewController {
     // MARK:- View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.emptyDataSetSource = self
+        self.tableView.emptyDataSetDelegate = self
         self.tableView.tableFooterView = UIView()
         self.title = category?.name
     }
@@ -74,5 +77,19 @@ extension ItemsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         showItemView(itemArray[indexPath.row])
+    }
+}
+
+extension ItemsTableViewController: EmptyDataSetSource, EmptyDataSetDelegate {
+    func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        return NSAttributedString(string: "No items to display!")
+    }
+    
+    func image(forEmptyDataSet scrollView: UIScrollView) -> UIImage? {
+        return UIImage(named: "emptyData")
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        return NSAttributedString(string: "Please check back later.")
     }
 }

@@ -10,6 +10,9 @@ import Foundation
 
 // MARK:- Keys
 let kFILEREFERENCE              = "gs://shopingmarketios.appspot.com"
+let kALGORIYA_APP_ID            = "AYOMZV52UF"
+let kALGORIYA_SEARCH_KEY        = "a454dfff806c0a67a25ead1d96308701"
+let kALGORIYA_ADMIN_KEY         = "7285d44069875271a7af2e56a3aa4c3a"
 
 // MARK:- Segues
 let kCategoryToItemSeg          = "CategoryToItemSeg"
