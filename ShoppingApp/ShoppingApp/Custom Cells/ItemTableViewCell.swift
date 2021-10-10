@@ -15,6 +15,11 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var itemImageView: UIImageView!
     
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
     var item: Item? {
         didSet {
             nameLabel.text = item?.name
