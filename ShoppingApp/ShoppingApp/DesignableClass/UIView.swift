@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  UIView.swift
 //  ShoppingApp
 //
 //  Created by KurbanAli on 10/10/21.

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0610EF112712AC1700DA9314 /* UiVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610EF102712AC1700DA9314 /* UiVIew.swift */; };
+		06CF867A2712CAA50067601A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF86792712CAA50067601A /* UIView.swift */; };
 		103419DF2538CB2000D80DD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 103419DE2538CB2000D80DD3 /* GoogleService-Info.plist */; };
 		103419E12538CB8C00D80DD3 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103419E02538CB8C00D80DD3 /* FirebaseCollectionReference.swift */; };
 		103419E7253B5CCA00D80DD3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103419E6253B5CCA00D80DD3 /* Category.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0610EF102712AC1700DA9314 /* UiVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiVIew.swift; sourceTree = "<group>"; };
+		06CF86792712CAA50067601A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		103419DE2538CB2000D80DD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		103419E02538CB8C00D80DD3 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		103419E6253B5CCA00D80DD3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		0610EF0F2712ABF400DA9314 /* DesignableClass */ = {
 			isa = PBXGroup;
 			children = (
-				0610EF102712AC1700DA9314 /* UiVIew.swift */,
+				06CF86792712CAA50067601A /* UIView.swift */,
 			);
 			path = DesignableClass;
 			sourceTree = "<group>";
@@ -373,7 +373,6 @@
 				10F79C332538C773008DB509 /* CategoryCollectionViewCell.swift in Sources */,
 				10EA03AB256B87F2007F0F34 /* AlgoriyaServiceManager.swift in Sources */,
 				10EA03A12568F27B007F0F34 /* PurchasedHistoryTableViewController.swift in Sources */,
-				0610EF112712AC1700DA9314 /* UiVIew.swift in Sources */,
 				10EA03A8256A39C1007F0F34 /* SearchViewController.swift in Sources */,
 				103419EE253C1DAE00D80DD3 /* ItemsTableViewController.swift in Sources */,
 				10EA039E2568ED4C007F0F34 /* EditProfileViewController.swift in Sources */,
@@ -389,6 +388,7 @@
 				10F79C1F2538C3E9008DB509 /* SceneDelegate.swift in Sources */,
 				103419E7253B5CCA00D80DD3 /* Category.swift in Sources */,
 				10EA039125663377007F0F34 /* MUser.swift in Sources */,
+				06CF867A2712CAA50067601A /* UIView.swift in Sources */,
 				10EA038D25662DED007F0F34 /* WelcomeViewController.swift in Sources */,
 				10EA03982568D6EB007F0F34 /* ProfileTableViewController.swift in Sources */,
 				10EA039525678B8C007F0F34 /* IndicatorManager.swift in Sources */,
