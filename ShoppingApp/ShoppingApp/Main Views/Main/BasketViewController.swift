@@ -118,7 +118,7 @@ class BasketViewController: UIViewController {
     // MARK:- Navigation
     
     func showItemView(_ item: Item) {
-        let itemVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ItemViewController") as! ItemViewController
+        let itemVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ItemViewController") as! ItemViewController
         itemVC.item = item
         self.navigationController?.pushViewController(itemVC, animated: true)
     }

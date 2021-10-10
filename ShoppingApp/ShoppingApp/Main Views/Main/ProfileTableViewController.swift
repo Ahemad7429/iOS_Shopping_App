@@ -66,7 +66,7 @@ class ProfileTableViewController: UITableViewController {
     }
     
     private func showLoginView() {
-        let loginView = UIStoryboard.init(name: "Onboarding", bundle: nil).instantiateViewController(identifier: "WelcomeViewController")
+        let loginView = UIStoryboard.init(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController")
         self.present(loginView, animated: true, completion: nil)
     }
     

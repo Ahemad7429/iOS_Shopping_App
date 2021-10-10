@@ -114,7 +114,7 @@ class ItemViewController: UIViewController {
     // MARK:- Navigation
     
     func openLoginView() {
-        let welcomeVC = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(identifier: "WelcomeViewController") as! WelcomeViewController
+        let welcomeVC = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
         self.present(welcomeVC, animated: true, completion: nil)
     }
 }
