@@ -11,7 +11,7 @@ import FirebaseStorage
 
 let remoteStorage = Storage.storage()
 
-func uploadImages(images: [UIImage?], itemId: String, completion: @escaping (_ imagesLinks: [String]) -> Void) {
+func uploadImages(images: [UIImage?], itemId: String, completion: @escaping (_ imagesLinks: [String]) -> ()) {
     if Reachabilty.HasConnection() {
         var uploadedImageCount = 0
         var imageLinkArray: [String] = []
@@ -36,7 +36,7 @@ func uploadImages(images: [UIImage?], itemId: String, completion: @escaping (_ i
     }
 }
 
-func saveImageInFirebase(imageData: Data, fileName: String, completion: @escaping (_ imageLink: String?) -> Void) {
+func saveImageInFirebase(imageData: Data, fileName: String, completion: @escaping (_ imageLink: String?) -> ()) {
     var task: StorageUploadTask!
     let storageRef = remoteStorage.reference(forURL: kFILEREFERENCE).child(fileName)
     

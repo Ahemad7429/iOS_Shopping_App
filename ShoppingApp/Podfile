@@ -16,5 +16,6 @@ target 'ShoppingApp' do
   pod 'NVActivityIndicatorView/AppExtension'
   pod 'JGProgressHUD'
   pod 'PayPal-iOS-SDK'
+  pod 'IQKeyboardManager'
   
 end

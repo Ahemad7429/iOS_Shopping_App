@@ -93,7 +93,7 @@ class SearchViewController: UIViewController {
     }
     
     private func showItemView(withItem: Item) {
-        let itemVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "itemView") as! ItemViewController
+        let itemVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "itemView") as! ItemViewController
         itemVC.item = withItem
         self.navigationController?.pushViewController(itemVC, animated: true)
     }

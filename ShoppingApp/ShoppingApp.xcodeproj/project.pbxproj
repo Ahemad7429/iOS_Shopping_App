@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0610EF112712AC1700DA9314 /* UiVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610EF102712AC1700DA9314 /* UiVIew.swift */; };
 		103419DF2538CB2000D80DD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 103419DE2538CB2000D80DD3 /* GoogleService-Info.plist */; };
 		103419E12538CB8C00D80DD3 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103419E02538CB8C00D80DD3 /* FirebaseCollectionReference.swift */; };
 		103419E7253B5CCA00D80DD3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103419E6253B5CCA00D80DD3 /* Category.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0610EF102712AC1700DA9314 /* UiVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiVIew.swift; sourceTree = "<group>"; };
 		103419DE2538CB2000D80DD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		103419E02538CB8C00D80DD3 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		103419E6253B5CCA00D80DD3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0610EF0F2712ABF400DA9314 /* DesignableClass */ = {
+			isa = PBXGroup;
+			children = (
+				0610EF102712AC1700DA9314 /* UiVIew.swift */,
+			);
+			path = DesignableClass;
+			sourceTree = "<group>";
+		};
 		103419E2253B5C7100D80DD3 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +212,7 @@
 		10F79C1B2538C3E9008DB509 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				0610EF0F2712ABF400DA9314 /* DesignableClass */,
 				10EA03A3256A3142007F0F34 /* ShoppingApp-Bridging-Header.h */,
 				10EA039325678B70007F0F34 /* Managers */,
 				103419E5253B5CB600D80DD3 /* Models */,
@@ -362,6 +373,7 @@
 				10F79C332538C773008DB509 /* CategoryCollectionViewCell.swift in Sources */,
 				10EA03AB256B87F2007F0F34 /* AlgoriyaServiceManager.swift in Sources */,
 				10EA03A12568F27B007F0F34 /* PurchasedHistoryTableViewController.swift in Sources */,
+				0610EF112712AC1700DA9314 /* UiVIew.swift in Sources */,
 				10EA03A8256A39C1007F0F34 /* SearchViewController.swift in Sources */,
 				103419EE253C1DAE00D80DD3 /* ItemsTableViewController.swift in Sources */,
 				10EA039E2568ED4C007F0F34 /* EditProfileViewController.swift in Sources */,
@@ -529,6 +541,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,6 +563,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

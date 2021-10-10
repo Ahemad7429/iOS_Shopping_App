@@ -331,6 +331,7 @@ PODS:
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.4.0)
   - InstantSearchClient (7.0.5)
+  - IQKeyboardManager (6.5.6)
   - JGProgressHUD (2.2)
   - leveldb-library (1.22)
   - nanopb (1.30906.0):
@@ -355,6 +356,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - Gallery
   - InstantSearchClient
+  - IQKeyboardManager
   - JGProgressHUD
   - NVActivityIndicatorView/AppExtension
   - PayPal-iOS-SDK
@@ -381,6 +383,7 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - InstantSearchClient
+    - IQKeyboardManager
     - JGProgressHUD
     - leveldb-library
     - nanopb
@@ -409,6 +412,7 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   InstantSearchClient: cd4b41f46bed82c1b12c759c76b733f7ed6dd8c2
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
@@ -416,6 +420,6 @@ SPEC CHECKSUMS:
   PayPal-iOS-SDK: 70d56697aef502c130b9840e31dea5c6b8a350e1
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
 
-PODFILE CHECKSUM: 22e0f052c231bd54ae75f32481ba20260dd1fc6c
+PODFILE CHECKSUM: f875810cdde5fe4efa2660d9581ea7d08067138a
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
