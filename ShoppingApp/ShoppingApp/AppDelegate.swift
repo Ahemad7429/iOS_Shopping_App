@@ -48,5 +48,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func initializePayPal() {
         PayPalMobile.initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction : "AdKeAzNPUkz18xUtf9K-hiuvl_oqjkqI7NW0AB1RF3JiiMzy2do6uK7SQhMluFg67GzmIcElXFORvN00", PayPalEnvironmentSandbox : "sb-keq9h3830106@personal.example.com"])
     }
+    
+    //this is utility function
+    private func printUtility(){
+    print("Hello Print")
+    }
 }
 
