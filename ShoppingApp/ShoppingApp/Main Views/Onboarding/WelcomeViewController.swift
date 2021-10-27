@@ -101,7 +101,7 @@ class WelcomeViewController: UIViewController {
     }
     
     
-    private func registerUser() {
+     func registerUser() {
         IndicatorManager.shared.show()
         MUser.registerUserWith(email: emailTextField.text!, password: passwordTextField.text!) { (error) in
             if error == nil {
@@ -114,11 +114,9 @@ class WelcomeViewController: UIViewController {
         }
     }
     
-    private func textFieldsHaveText() -> Bool {
-        return emailTextField.text != "" && passwordTextField.text != ""
-    }
+
     
-    private func dismissView() {
+     func dismissView() {
         self.dismiss(animated: true, completion: nil)
     }
     
