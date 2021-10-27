@@ -42,6 +42,12 @@ final class IndicatorManager {
             activityIdicator?.stopAnimating()
         }
     }
+        func dismiss2() {
+        if activityIdicator != nil {
+            self.activityIdicator?.removeFromSuperview()
+            activityIdicator?.stopAnimating()
+        }
+    }
     
     func showSuccessHUD(with message: String) {
         guard window != nil else { return }
