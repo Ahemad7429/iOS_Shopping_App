@@ -112,6 +112,26 @@ func saveItemToAlgolia(item: Item) {
     }
 }
 
+
+
+func saveItemToAlist(item: Item) {
+    
+    let index1 = AlgoliaServiceManager.shared.index
+    
+    let itemToSaveList = itemDictionaryFrom(item) as! [String : Any]
+    
+    index1.addObject(itemToSaveList, withID: item.id, requestOptions: nil) { (content, error) in
+        
+        
+        if error != nil {
+            print("error saving to Alist", error!.localizedDescription)
+        } else {
+            print("added to Alist")
+        }
+    }
+}
+
+
 func searchAlgolia(searchString: String, completion: @escaping (_ itemArray: [String]) -> Void) {
     
     let index = AlgoliaServiceManager.shared.index
